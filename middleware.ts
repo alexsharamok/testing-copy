@@ -1,10 +1,18 @@
+// middleware.ts
 import { NextRequest, NextResponse } from 'next/server'
 
 export function middleware(req: NextRequest) {
-  const token = req.headers.get('x-baseline-token') ||
+  const expectedToken = process.env.BASELINE_ACCESS_TOKEN
+
+  if (!expectedToken) {
+    return new NextResponse('Server misconfigured', { status: 500 })
+  }
+
+  const providedToken =
+    req.headers.get('x-baseline-token') ??
     req.nextUrl.searchParams.get('token')
 
-  if (token === process.env.BASELINE_ACCESS_TOKEN) {
+  if (providedToken === expectedToken) {
     return NextResponse.next()
   }
 
@@ -12,5 +20,7 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: '/:path*',
+  matcher: [
+    '/((?!_next/static|_next/image|favicon.ico).*)',
+  ],
 }
