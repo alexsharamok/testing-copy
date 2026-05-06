@@ -1,0 +1,54 @@
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("https://cdn.fonts.net/t/1.css?apiType=css&projectid=15f19b62-eef1-4717-b1cd-a7737d91cb40");
+  
+@font-face {
+  font-family: "AvenirNextRegular";
+  font-style: normal;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextRegular/normal_normal.woff2') format('woff2'), url('webFonts/AvenirNextRegular/normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextMediumItalic";
+  font-style: italic;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextMediumItalic/italic_normal.woff2') format('woff2'), url('webFonts/AvenirNextMediumItalic/italic_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextItalic";
+  font-style: italic;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextItalic/italic_normal.woff2') format('woff2'), url('webFonts/AvenirNextItalic/italic_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextDemi";
+  font-style: normal;
+  font-stretch: normal;
+  font-display: swap;
+  src: url('AvenirNext/AvenirNextDemi_normal_normal.woff2') format('woff2'), url('AvenirNext/AvenirNextDemi_normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextDemi";
+  font-style: normal;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextDemi/normal_normal.woff2') format('woff2'), url('webFonts/AvenirNextDemi/normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextBold";
+  font-style: normal;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextBold/normal_normal.woff2') format('woff2'), url('webFonts/AvenirNextBold/normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextMedium";
+  font-style: normal;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextMedium/normal_normal.woff2') format('woff2'), url('webFonts/AvenirNextMedium/normal_normal.woff') format('woff');
+}
+@font-face {
+  font-family: "AvenirNextDemiItalic";
+  font-style: italic;
+  font-stretch: normal;
+  src: url('webFonts/AvenirNextDemiItalic/italic_normal.woff2') format('woff2'), url('webFonts/AvenirNextDemiItalic/italic_normal.woff') format('woff');
+}
