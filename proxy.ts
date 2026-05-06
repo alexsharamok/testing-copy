@@ -1,22 +1,8 @@
 // proxy.ts
-import { NextRequest, NextResponse } from 'next/server'
+import { NextResponse } from 'next/server'
 
-export function proxy(req: NextRequest) {
-  const expectedToken = process.env.BASELINE_ACCESS_TOKEN
-
-  if (!expectedToken) {
-    return new NextResponse('Server misconfigured', { status: 500 })
-  }
-
-  const providedToken =
-    req.headers.get('x-baseline-token') ??
-    req.nextUrl.searchParams.get('token')
-
-  if (providedToken === expectedToken) {
-    return NextResponse.next()
-  }
-
-  return new NextResponse('Unauthorized', { status: 401 })
+export function proxy() {
+  return new NextResponse('Blocked by proxy', { status: 401 })
 }
 
 export const config = {
