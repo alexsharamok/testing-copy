@@ -1,7 +1,7 @@
-// middleware.ts
+// proxy.ts
 import { NextRequest, NextResponse } from 'next/server'
 
-export function middleware(req: NextRequest) {
+export function proxy(req: NextRequest) {
   const expectedToken = process.env.BASELINE_ACCESS_TOKEN
 
   if (!expectedToken) {
@@ -20,7 +20,5 @@ export function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: [
-    '/((?!_next/static|_next/image|favicon.ico).*)',
-  ],
+  matcher: '/:path*',
 }
