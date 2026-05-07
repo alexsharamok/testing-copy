@@ -1,6 +1,11 @@
 import { redirect } from 'next/navigation'
 
-export default function Page() {
-  return <h1>THIS IS THE NEXT APP</h1>
-  //redirect('/index.html')
+type Props = {
+  searchParams: Promise<{ token?: string }>
+}
+
+export default async function Page({ searchParams }: Props) {
+  const { token } = await searchParams
+
+  redirect(token ? `/index.html?token=${encodeURIComponent(token)}` : '/index.html')
 }
