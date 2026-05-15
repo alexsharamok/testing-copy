@@ -1,0 +1,55 @@
+{
+  "ItemPath": "/sitecore/content/Habitat/Home/Modules/Feature/Demo/Fake IP Address",
+  "Name": "Fake IP Address",
+  "ID": "c28ff134-0f92-4b47-8b5b-d4b474d77df4",
+  "Placeholders": [
+    {
+      "Key": "content",
+      "DisplayName": "content",
+      "Renderings": [
+        {
+          "Name": "Demo Content",
+          "ID": "3fc98f56-c7c2-480c-9769-6bd25fbdd390",
+          "ContextItemID": "c28ff134-0f92-4b47-8b5b-d4b474d77df4",
+          "RenderingID": "b883e272-70d8-419a-8af8-819356d839ad",
+          "Placeholders": [],
+          "Html": [
+            "<div>",
+            "  <h1>",
+            "    Demo Page",
+            "  </h1>",
+            "  <p>",
+            "    This page fakes the IP address. If IP geo lookup is enabled, the IP address will be used to lookup geo data.",
+            "  </p>",
+            "  <p>",
+            "    The page is not tracked in xDB.",
+            "    <br />",
+            "    After returning to a standard web page, use the panel in the right hand side to view the faked information.",
+            "  </p>",
+            "  <p>",
+            "    <a href=\"/\">",
+            "      Return to the home page",
+            "    </a>",
+            "  </p>",
+            "</div>"
+          ],
+          "Parameters": {}
+        }
+      ]
+    }
+  ],
+  "Html": [
+    "<html>",
+    "  <head>",
+    "  </head>",
+    "  <body>",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <UniformSlot slot={slots[\"content\"]} />",
+    "  </body>",
+    "</html>"
+  ],
+  "Parameters": {}
+}

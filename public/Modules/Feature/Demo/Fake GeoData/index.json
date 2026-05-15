@@ -1,0 +1,55 @@
+{
+  "ItemPath": "/sitecore/content/Habitat/Home/Modules/Feature/Demo/Fake GeoData",
+  "Name": "Fake GeoData",
+  "ID": "cb4d7b30-1359-4c1d-9b0e-16b019c92c97",
+  "Placeholders": [
+    {
+      "Key": "content",
+      "DisplayName": "content",
+      "Renderings": [
+        {
+          "Name": "Demo Content",
+          "ID": "3fc98f56-c7c2-480c-9769-6bd25fbdd390",
+          "ContextItemID": "cb4d7b30-1359-4c1d-9b0e-16b019c92c97",
+          "RenderingID": "b883e272-70d8-419a-8af8-819356d839ad",
+          "Placeholders": [],
+          "Html": [
+            "<div>",
+            "  <h1>",
+            "    Demo Page",
+            "  </h1>",
+            "  <p>",
+            "    This page fakes the geo location. Set the geo location by opening this page in the Sitecore content editor.",
+            "  </p>",
+            "  <p>",
+            "    The page is not tracked in xDB.",
+            "    <br />",
+            "    After returning to a standard web page, use the panel in the right hand side to view the faked information.",
+            "  </p>",
+            "  <p>",
+            "    <a href=\"/\">",
+            "      Return to the home page",
+            "    </a>",
+            "  </p>",
+            "</div>"
+          ],
+          "Parameters": {}
+        }
+      ]
+    }
+  ],
+  "Html": [
+    "<html>",
+    "  <head>",
+    "  </head>",
+    "  <body>",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <div className=\"undefined\" style={{ display: \"none\", }} />",
+    "    <UniformSlot slot={slots[\"content\"]} />",
+    "  </body>",
+    "</html>"
+  ],
+  "Parameters": {}
+}

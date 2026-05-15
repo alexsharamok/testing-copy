@@ -5,11 +5,11 @@ const nextConfig = {
       beforeFiles: [
         {
           source: "/",
-          destination: "/index.html",
+          destination: "/prod.html",
         },
         {
           source: "/:path((?!.*\\..*).*)",
-          destination: "/:path/index.html",
+          destination: "/:path/prod.html",
         },
       ],
     };
